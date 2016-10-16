@@ -4,7 +4,6 @@ let Service, Characteristic, UUIDGen;
 module.exports = (homebridge) => {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  UUIDGen = homebridge.hap.uuid;
   homebridge.registerPlatform("homebridge-cec", "TV", CEC);
 }
 
